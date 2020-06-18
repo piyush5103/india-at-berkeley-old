@@ -1,1 +1,21 @@
-#ffe74c rgb(255, 89, 100) #ffffff #38618c #35a7ff
+/*#ffe74c rgb(255, 89, 100) #ffffff #38618c #35a7ff*/
+
+.navbarText {
+	font-family: 'Muli', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.25px;
+	font-size: 16px;
+	color: #333232;
+	padding: 8px;
+	transition-duration: 0.2s;
+}
+
+.navbarText:hover {
+	background-color: lightblue;
+	border-radius: 6px;
+
+}
+
+.uk-navbar-nav>li>a{
+	min-height: 60px;
+}
