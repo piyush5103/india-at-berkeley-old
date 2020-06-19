@@ -21,3 +21,18 @@
 .uk-navbar-nav>li>a{
 	min-height: 60px;
 }
+
+.navbar-mob{
+	display: none;
+}
+
+
+@media only screen and (max-width: 890px) {
+	.navbar-mob{
+		display: block;
+	}
+	
+	.navbar-lap{
+		display: none;
+	}
+}
