@@ -5,15 +5,17 @@
 	font-weight: 600;
 	letter-spacing: 0.25px;
 	font-size: 16px;
-	color: #333232;
+	color: #343434;
 	padding: 8px;
+	padding-left: 14px;
+	padding-right: 14px;
 	transition-duration: 0.2s;
 }
 
 .navbarText:hover {
-	background-color: lightblue;
+	background-color: #FDB515;
 	border-radius: 6px;
-
+	color: #000;
 }
 
 .uk-navbar-nav>li>a{
