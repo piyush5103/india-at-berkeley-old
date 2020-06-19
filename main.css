@@ -5,34 +5,52 @@
 	font-weight: 600;
 	letter-spacing: 0.25px;
 	font-size: 16px;
-	color: #343434;
+	color: #5d5d5d;
 	padding: 8px;
 	padding-left: 14px;
 	padding-right: 14px;
-	transition-duration: 0.2s;
+	transition-duration: 0.25s;
 }
 
 .navbarText:hover {
 	background-color: #FDB515;
 	border-radius: 6px;
-	color: #000;
+	color: #4b4b4b;
 }
 
-.uk-navbar-nav>li>a{
+.uk-navbar-nav > li > a {
 	min-height: 60px;
 }
 
-.navbar-mob{
+.navbar-mob {
 	display: none;
 }
 
+.bg-global {
+	background-color: #f7f5f2;
+}
+
+.navbar-title {
+	font-family: 'Muli', sans-serif;
+	background: -webkit-linear-gradient(0deg, rgba(255, 153, 51, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(19, 136, 8, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700
+}
 
 @media only screen and (max-width: 890px) {
-	.navbar-mob{
+	.navbar-mob {
 		display: block;
 	}
-	
-	.navbar-lap{
+
+	.navbar-lap {
 		display: none;
 	}
+}
+
+.heroa {
+	background-image: url(/img/svg/conference_speaker.svg);
+	background-size: 740px;
+	background-position: 75%;
+	background-repeat: no-repeat;
 }
