@@ -18,6 +18,12 @@
 	color: #4b4b4b;
 }
 
+.uk-active .navbarText {
+	background-color: #FDB515;
+	border-radius: 6px;
+	color: #4b4b4b;
+}
+
 .uk-navbar-nav > li > a {
 	min-height: 60px;
 }
@@ -48,7 +54,7 @@
 	}
 }
 
-.heroa {
+.hero {
 	background-image: url(/img/svg/conference_speaker.svg);
 	background-size: 740px;
 	background-position: 75%;
