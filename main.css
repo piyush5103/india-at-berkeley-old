@@ -52,7 +52,11 @@ a:hover {
 	font-weight: 700;
 }
 
-.hero-mobile{
+.hero-mobile {
+	display: none;
+}
+
+.section-heading-mob {
 	display: none;
 }
 
@@ -65,7 +69,7 @@ a:hover {
 		display: none;
 	}
 
-	.section-headings-lap {
+	.section-heading-lap {
 		display: none;
 	}
 
@@ -73,18 +77,22 @@ a:hover {
 		margin-right: 30px;
 		margin-left: 0px;
 	}
-	
-	.hero{
+
+	.hero {
 		display: none;
 	}
-	
-	.hero-mobile{
+
+	.hero-mobile {
 		display: block
+	}
+
+	.section-heading-mob {
+		display: block;
 	}
 }
 
-@media only screen and (min-width: 890px){
-	.speaker-grid{
+@media only screen and (min-width: 890px) {
+	.speaker-grid {
 		margin-right: 20px;
 	}
 }
@@ -169,4 +177,19 @@ width: 260px;
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	margin-bottom: 38px
+}
+
+.section-margin {
+	margin-bottom: 60px;
+}
+
+.section-heading-lap {
+	padding-right: 40px;
+	padding-top: 30px;
+}
+
+.section-heading-text {
+	font-family: 'muli', sans-serif;
+	font-weight: 600;
+	color: #003262;
 }
