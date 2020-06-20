@@ -52,6 +52,10 @@ a:hover {
 	font-weight: 700;
 }
 
+.hero-mobile{
+	display: none;
+}
+
 @media only screen and (max-width: 890px) {
 	.navbar-mob {
 		display: block;
@@ -60,6 +64,29 @@ a:hover {
 	.navbar-lap {
 		display: none;
 	}
+
+	.section-headings-lap {
+		display: none;
+	}
+
+	.speaker-grid {
+		margin-right: 30px;
+		margin-left: 0px;
+	}
+	
+	.hero{
+		display: none;
+	}
+	
+	.hero-mobile{
+		display: block
+	}
+}
+
+@media only screen and (min-width: 890px){
+	.speaker-grid{
+		margin-right: 20px;
+	}
 }
 
 .hero {
@@ -67,13 +94,14 @@ a:hover {
 	background-size: 740px;
 	background-position: 75%;
 	background-repeat: no-repeat;
+	margin-bottom: 30px
 }
 
 .speaker-img {
-  width: 260px;
-  height: 200px;
-  background-position: top;
-  background-size: cover;
+	width: 260px;
+	height: 200px;
+	background-position: top;
+	background-size: cover;
 	border-radius: 10px 10px 0px 0px;
 }
 
@@ -119,10 +147,26 @@ width: 260px;
 }
 
 .speaker-info {
-	width: 260px; background-color: white; border-radius: 0px 0px 10px 10px;
+	width: 260px;
+	background-color: white;
+	border-radius: 0px 0px 10px 10px;
 }
 
 .speaker-card {
 	margin-left: 30px;
 	padding: 0px;
+}
+
+.speaker-grid {
+	display: flex;
+	justify-content: space-around;
+	margin-riht: 0px
+}
+
+.hero-mobile {
+	background-image: url(/img/svg/conference_speaker.svg);
+	background-size: 150%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	margin-bottom: 38px
 }
