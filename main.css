@@ -77,6 +77,11 @@ a:hover {
 		margin-right: 30px;
 		margin-left: 0px;
 	}
+	
+	.team-grid {
+		margin-right: 30px;
+		margin-left: 0px;
+	}
 
 	.hero {
 		display: none;
@@ -89,10 +94,18 @@ a:hover {
 	.section-heading-mob {
 		display: block;
 	}
+
+	.about-div {
+		margin-left: 40px;
+	}
 }
 
 @media only screen and (min-width: 890px) {
 	.speaker-grid {
+		margin-right: 20px;
+	}
+	
+	.team-grid {
 		margin-right: 20px;
 	}
 }
@@ -168,7 +181,11 @@ width: 260px;
 .speaker-grid {
 	display: flex;
 	justify-content: space-around;
-	margin-riht: 0px
+}
+
+.team-grid {
+	display: flex;
+	justify-content: space-around;
 }
 
 .hero-mobile {
@@ -188,8 +205,42 @@ width: 260px;
 	padding-top: 30px;
 }
 
-.section-heading-text {
+.section-heading-text-lap {
 	font-family: 'muli', sans-serif;
 	font-weight: 600;
-	color: #003262;
+	color: #3B7EA1;
+}
+
+.section-heading-text-mob {
+	font-family: 'muli', sans-serif;
+	font-weight: 600;
+	font-size: 32px;
+	color: #3B7EA1;
+}
+
+.team-info {
+	width: 260px;
+	background-color: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.team-img {
+	width: 260px;
+	height: 200px;
+	background-position: top;
+	background-size: cover;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.team-card {
+	margin-left: 30px;
+	padding: 0px;
+}
+
+.team-info-name {
+	font-size: 18px; font-weight: 600; padding-top: 10px;
+}
+
+.team-info-email {
+	font-size: 14px; padding-bottom: 10px;
 }
