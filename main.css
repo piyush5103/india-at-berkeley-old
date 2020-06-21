@@ -43,6 +43,7 @@ a:hover {
 .bg-global {
 	background-color: #d9d9d9;
 }
+
 /*f7f5f2*/
 .navbar-title {
 	font-family: 'Muli', sans-serif;
@@ -77,7 +78,7 @@ a:hover {
 		margin-right: 30px;
 		margin-left: 0px;
 	}
-	
+
 	.team-grid {
 		margin-right: 30px;
 		margin-left: 0px;
@@ -104,7 +105,7 @@ a:hover {
 	.speaker-grid {
 		margin-right: 20px;
 	}
-	
+
 	.team-grid {
 		margin-right: 20px;
 	}
@@ -238,9 +239,23 @@ width: 260px;
 }
 
 .team-info-name {
-	font-size: 18px; font-weight: 600; padding-top: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 10px;
 }
 
 .team-info-email {
-	font-size: 14px; padding-bottom: 10px;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.subscribe-button {
+	font-family: muli, sans-serif;
+	background-color: #FDB515;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.subscribe-button:hover{
+	background-color: #ffcf64;
 }
