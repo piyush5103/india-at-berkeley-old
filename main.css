@@ -51,9 +51,9 @@ a:hover {
 /*f7f5f2*/
 .navbar-title {
 	font-family: 'Muli', sans-serif;
-	background: -webkit-linear-gradient(0deg, rgba(255, 153, 51, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(19, 136, 8, 1) 100%);
+	/*background: -webkit-linear-gradient(0deg, rgba(255, 153, 51, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(19, 136, 8, 1) 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;*/
 	font-weight: 700;
 }
 
