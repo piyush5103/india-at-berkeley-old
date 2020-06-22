@@ -1,4 +1,8 @@
 /*#ffe74c rgb(255, 89, 100) #ffffff #38618c #35a7ff*/
+:root {
+  --main-bg-color: #d9d9d9;
+}
+
 a {
 	text-decoration: none;
 }
@@ -41,7 +45,7 @@ a:hover {
 }
 
 .bg-global {
-	background-color: #d9d9d9;
+	background-color: var(--main-bg-color);
 }
 
 /*f7f5f2*/
@@ -166,6 +170,8 @@ width: 260px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	width: 20%;
+	display: flex;
+	flex-direction: column;
 }
 
 .speaker-info {
@@ -242,11 +248,14 @@ width: 260px;
 	font-size: 18px;
 	font-weight: 600;
 	padding-top: 10px;
+	color: #003262
 }
 
 .team-info-email {
 	font-size: 14px;
 	padding-bottom: 10px;
+	color: #3B7EA1;
+	font-weight: 400;
 }
 
 .subscribe-button {
@@ -258,4 +267,33 @@ width: 260px;
 
 .subscribe-button:hover{
 	background-color: #ffcf64;
+}
+.speaker-card-date {
+	font-weight: 700; font-size: 24px;
+	color: #C4820E
+}
+
+.speaker-card-month {
+	font-size: 14px ; margin-top: -4px;
+	color: #C4820E;
+}
+
+.speaker-card-name {
+	font-size: 18px; font-weight: 600;
+	color: #003262;
+}
+
+.speaker-card-attributes {
+	font-size: 14px;
+	color: #3B7EA1;
+}
+
+.speaker-attributes {
+	padding: 0px;
+	display: flex;
+	text-align: left;
+	justify-content: center;
+	flex-direction: column;
+	flex: 1;
+	min-width: 1px;
 }
