@@ -103,6 +103,14 @@ a:hover {
 	.about-div {
 		margin-left: 40px;
 	}
+	
+	.form-lap{
+		display: none;
+	}
+	
+	.form-mob{
+		display: block;
+	}
 }
 
 @media only screen and (min-width: 890px) {
@@ -113,6 +121,10 @@ a:hover {
 	.team-grid {
 		margin-right: 20px;
 	}
+	
+	.form-mob {
+	display: none;
+}
 }
 
 .hero {
@@ -297,3 +309,9 @@ width: 260px;
 	flex: 1;
 	min-width: 1px;
 }
+
+.navbarLink-mob {
+	margin-bottom: 3px;
+}
+
+
