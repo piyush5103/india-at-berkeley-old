@@ -599,7 +599,11 @@ f7f5f2-->
 				teamHTML += teamJsonData[team2].content.$t;
 
 
-				teamHTML += '); background-position: ' + teamJsonData[teamDataEntryCount + 5].content.$t + ' ' + teamJsonData[teamDataEntryCount + 4].content.$t + ';"></div><div class="team-info"><div class="uk-margin-remove-left uk-flex-center" uk-grid><div class="uk-padding-remove uk-flex uk-flex-column"><span class="team-info-name">';
+				teamHTML += '); background-position: ' + teamJsonData[teamDataEntryCount + 5].content.$t + ' ';
+								console.log(teamDataEntryCount);
+
+				teamHTML += teamJsonData[teamDataEntryCount + 4].content.$t + ';"></div><div class="team-info"><div class="uk-margin-remove-left uk-flex-center" uk-grid><div class="uk-padding-remove uk-flex uk-flex-column"><span class="team-info-name">';
+				
 				team3 = teamDataEntryCount;
 				teamHTML += teamJsonData[team3].content.$t;
 
@@ -613,7 +617,7 @@ f7f5f2-->
 
 
 
-				teamDataEntryCount = teamDataEntryCount + 8;
+				teamDataEntryCount = teamDataEntryCount + 6;
 			}
 			console.log(teamHTML);
 			document.getElementById("team-id").innerHTML = teamHTML;
