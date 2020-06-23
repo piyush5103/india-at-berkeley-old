@@ -123,7 +123,9 @@ f7f5f2-->
 
 
 					<div id="speaker-id" class="speaker-grid uk-child-width-auto uk-text-center" uk-grid>
-<!--
+
+						<p>an error occurred. please try again later. sorry for any inconvenience.</p>
+						<!--
 						<a class="uk-padding-remove" href="#">
 							<div class="speaker-card">
 								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
@@ -280,7 +282,7 @@ f7f5f2-->
 				<div class="uk-width-expand">
 
 
-					<div class="team-grid uk-child-width-auto uk-text-center" uk-grid>
+					<div id="team-id" class="team-grid uk-child-width-auto uk-text-center" uk-grid>
 
 						<a class="uk-padding-remove" target="_blank" href="https://linkedin.com/in/anvitakulshrestha/">
 							<div class="team-card">
@@ -470,11 +472,11 @@ f7f5f2-->
 							<button class="uk-button subscribe-button" type="submit">Submit</button>
 
 						</form>
-						
-						
+
+
 					</div>
 				</div>
-				
+
 				<div class="form-mob uk-width-expand">
 					<div class="about-div uk-margin-large-right uk-text-left">
 
@@ -485,8 +487,8 @@ f7f5f2-->
 							<button class="uk-button subscribe-button" type="submit">Submit</button>
 
 						</form>
-						
-						
+
+
 					</div>
 				</div>
 			</div>
@@ -501,66 +503,120 @@ f7f5f2-->
 
 
 
-
 	<script type="text/javascript">
-		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/od6/public/basic?alt=json").then(function(resp) {
+		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/1/public/basic?alt=json").then(function(resp) {
 			return resp.json();
-		}).then(function(data) {
-			var jsonData = data.feed.entry;
-			var jsonDataLength = (jsonData.length - 7) / 7;
-			delete jsonData[0];
-			delete jsonData[1];
-			delete jsonData[2];
-			delete jsonData[3];
-			delete jsonData[4];
-			delete jsonData[5];
-			delete jsonData[6];
-			console.log(jsonData);
-			console.log(jsonDataLength);
+		}).
+		then(function(data) {
+			console.log(data);
+			var speakerJsonData = data.feed.entry;
+			var speakerJsonDataLength = (speakerJsonData
+				.length - 8) / 8;
+			delete speakerJsonData[0];
+			delete speakerJsonData[1];
+			delete speakerJsonData[2];
+			delete speakerJsonData[3];
+			delete speakerJsonData[4];
+			delete speakerJsonData[5];
+			delete speakerJsonData[6];
+			delete speakerJsonData[7];
+			console.log(speakerJsonData);
+			console.log(speakerJsonDataLength);
 
-			var j = 7;
-			var q,w,e,r,t,y,u;
+			var j = 8;
+			var q, w, e, r, t, y, u;
 			console.log(j);
-			var x="";
-			for (k = 0; k < jsonDataLength; k++) {
-				x +="<a class=\"uk-padding-remove\" target=\"_blank\" href=\"";
-				q = j+5;
-				x+= jsonData[q].content.$t;
-				
-				
-				x+= "\"><div class=\"speaker-card\"><div class=\"speaker-img\" style=\"background-image: url(";
-				w= j+6;
-				x+= jsonData[w].content.$t;
-				
-				
-				x+= ");\"></div><div class=\"speaker-info\"><div class=\"uk-flex uk-text-center\" uk-grid><div class=\"speaker-date\"><span class=\"speaker-card-date\">";
-				e = j+1;
-				x+= jsonData[e].content.$t;
-				
-				x+= "</span><span class=\"speaker-card-month\">";
-				r = j+2;
-				x+= jsonData[r].content.$t;
-				
-				x+= "</span></div><div class=\"speaker-attributes\"><span class=\"speaker-card-name\">";
+			var x = "";
+			for (k = 0; k < speakerJsonDataLength; k++) {
+				x += "<a class=\"uk-padding-remove\" target=\"_blank\" href=\"";
+				q = j + 4;
+				x += speakerJsonData[q].content.$t;
+
+
+				x += "\"><div class=\"speaker-card\"><div class=\"speaker-img\" style=\"background-image: url(";
+				w = j + 5;
+				x += speakerJsonData[w].content.$t;
+
+
+				x += "); background-position: " + speakerJsonData[j + 7].content.$t + " " + speakerJsonData[j + 6].content.$t + ";\"></div><div class=\"speaker-info\"><div class=\"uk-flex uk-text-center\" uk-grid><div class=\"speaker-date\"><span class=\"speaker-card-date\">";
+				e = j + 1;
+				x += speakerJsonData[e].content.$t;
+
+				x += "</span><span class=\"speaker-card-month\">";
+				r = j + 2;
+				x += speakerJsonData[r].content.$t;
+
+				x += "</span></div><div class=\"speaker-attributes\"><span class=\"speaker-card-name\">";
 				t = j;
-				x+= jsonData[t].content.$t;
-				
-				x+= "</span><span class=\"speaker-card-attributes\">";
-				y = j+3;
-				x+= jsonData[y].content.$t;
-				
-				x+= "</span><span class=\"speaker-card-attributes\">";
-				u = j+4;
-				x+= jsonData[u].content.$t;
-				
-				x+= "</span></div></div></div></div></a>";
-				
-				
-				
-				j= j+7;
+				x += speakerJsonData[t].content.$t;
+
+				x += "</span><span class=\"speaker-card-attributes\">";
+				y = j + 3;
+				x += speakerJsonData[y].content.$t;
+
+
+				x += "</span></div></div></div></div></a>";
+
+
+
+				j = j + 8;
 			}
 			console.log(x);
 			document.getElementById("speaker-id").innerHTML = x;
+		})
+
+
+
+		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/2/public/basic?alt=json").then(function(resp) {
+			return resp.json();
+		}).
+		then(function(data) {
+			console.log(data);
+			var teamJsonData = data.feed.entry;
+			var speakerJsonDataLength = (teamJsonData.length - 6) / 6;
+			delete teamJsonData[0];
+			delete teamJsonData[1];
+			delete teamJsonData[2];
+			delete teamJsonData[3];
+			delete teamJsonData[4];
+			delete teamJsonData[5];
+
+			console.log(teamJsonData);
+			console.log(speakerJsonDataLength);
+
+			var teamDataEntryCount = 6;
+			var team1, team2, team3, team4, team5, team6, team7;
+			console.log(teamDataEntryCount);
+			var teamHTML = '';
+			for (k = 0; k < speakerJsonDataLength; k++) {
+				teamHTML += '<a class="uk-padding-remove" target="_blank" href="';
+				team1 = teamDataEntryCount + 2;
+				teamHTML += teamJsonData[team1].content.$t;
+
+
+				teamHTML += '"><div class="team-card"><div class="team-img" style="background-image: url(';
+				team2 = teamDataEntryCount + 3;
+				teamHTML += teamJsonData[team2].content.$t;
+
+
+				teamHTML += '); background-position: ' + teamJsonData[teamDataEntryCount + 5].content.$t + ' ' + teamJsonData[teamDataEntryCount + 4].content.$t + ';"></div><div class="team-info"><div class="uk-margin-remove-left uk-flex-center" uk-grid><div class="uk-padding-remove uk-flex uk-flex-column"><span class="team-info-name">';
+				team3 = teamDataEntryCount;
+				teamHTML += teamJsonData[team3].content.$t;
+
+				teamHTML += '</span><span class="team-info-email">';
+				team4 = teamDataEntryCount + 1;
+				teamHTML += teamJsonData[team4].content.$t;
+
+
+
+				teamHTML += '</span></div></div></div></div></a>';
+
+
+
+				teamDataEntryCount = teamDataEntryCount + 8;
+			}
+			console.log(teamHTML);
+			document.getElementById("team-id").innerHTML = teamHTML;
 		})
 	</script>
 
