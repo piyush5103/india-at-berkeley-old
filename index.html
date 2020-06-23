@@ -124,7 +124,7 @@ f7f5f2-->
 
 					<div id="speaker-id" class="speaker-grid uk-child-width-auto uk-text-center" uk-grid>
 
-						<p>an error occurred. please try again later. sorry for any inconvenience.</p>
+						<p><span style="color: #626262">Loading, please wait. If nothing appears within 10-15 seconds, please refresh the page. If this error persists, please try again later. Sorry for the inconvenience.</span></p>
 						<!--
 						<a class="uk-padding-remove" href="#">
 							<div class="speaker-card">
@@ -252,8 +252,8 @@ f7f5f2-->
 				</div>
 				<div class="uk-width-expand">
 					<div class="about-div uk-margin-large-right">
-
-						<p style="font-family: 'muli', sans-serif; line-height: 2; text-align: justify; color: #003262">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio. Dictumst quisque sagittis purus sit amet. Amet tellus cras adipiscing enim eu turpis egestas. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Feugiat in ante metus dictum at tempor commodo. Dapibus ultrices in iaculis nunc sed augue lacus. Lacus vestibulum sed arcu non. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Dignissim suspendisse in est ante in nibh. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Facilisis gravida neque convallis a cras semper auctor. Eget magna fermentum iaculis eu non. Nunc mattis enim ut tellus elementum. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Purus in massa tempor nec. Vulputate sapien nec sagittis aliquam malesuada.</p>
+						<p id="about-id" style="font-family: 'muli', sans-serif; line-height: 2; text-align: justify; color: #003262">
+							<span style="color: #626262">Loading, please wait. If nothing appears within 10-15 seconds, please refresh the page. If this error persists, please try again later. Sorry for the inconvenience.</span></p>
 					</div>
 				</div>
 			</div>
@@ -283,7 +283,8 @@ f7f5f2-->
 
 
 					<div id="team-id" class="team-grid uk-child-width-auto uk-text-center" uk-grid>
-
+						<p><span style="color: #626262">Loading, please wait. If nothing appears within 10-15 seconds, please refresh the page. If this error persists, please try again later. Sorry for the inconvenience.</span></p>
+<!--
 						<a class="uk-padding-remove" target="_blank" href="https://linkedin.com/in/anvitakulshrestha/">
 							<div class="team-card">
 								<div class="team-img" style="background-image: url(img/team/anvitakulshrestha.jpg);"></div>
@@ -404,7 +405,7 @@ f7f5f2-->
 								</div>
 							</div>
 						</a>
-
+-->
 
 
 
@@ -437,7 +438,7 @@ f7f5f2-->
 				<div class="uk-width-expand">
 					<div class="about-div uk-margin-large-right">
 
-						<p style="font-family: 'muli', sans-serif; line-height: 2; text-align: justify; color: #003262">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio. Dictumst quisque sagittis purus sit amet. Amet tellus cras adipiscing enim eu turpis egestas. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Feugiat in ante metus dictum at tempor commodo. Dapibus ultrices in iaculis nunc sed augue lacus. Lacus vestibulum sed arcu non. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Dignissim suspendisse in est ante in nibh. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Facilisis gravida neque convallis a cras semper auctor. Eget magna fermentum iaculis eu non. Nunc mattis enim ut tellus elementum. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Purus in massa tempor nec. Vulputate sapien nec sagittis aliquam malesuada.</p>
+						<p id="notes-id" style="font-family: 'muli', sans-serif; line-height: 2; text-align: justify; color: #003262"><span style="color: #626262">Loading, please wait. If nothing appears within 10-15 seconds, please refresh the page. If this error persists, please try again later. Sorry for the inconvenience.</span></p>
 					</div>
 				</div>
 			</div>
@@ -520,12 +521,12 @@ f7f5f2-->
 			delete speakerJsonData[5];
 			delete speakerJsonData[6];
 			delete speakerJsonData[7];
-			console.log(speakerJsonData);
-			console.log(speakerJsonDataLength);
+			//console.log(speakerJsonData);
+			//console.log(speakerJsonDataLength);
 
 			var j = 8;
 			var q, w, e, r, t, y, u;
-			console.log(j);
+			//console.log(j);
 			var x = "";
 			for (k = 0; k < speakerJsonDataLength; k++) {
 				x += "<a class=\"uk-padding-remove\" target=\"_blank\" href=\"";
@@ -581,12 +582,12 @@ f7f5f2-->
 			delete teamJsonData[4];
 			delete teamJsonData[5];
 
-			console.log(teamJsonData);
-			console.log(speakerJsonDataLength);
+			//console.log(teamJsonData);
+			//console.log(speakerJsonDataLength);
 
 			var teamDataEntryCount = 6;
 			var team1, team2, team3, team4, team5, team6, team7;
-			console.log(teamDataEntryCount);
+			//console.log(teamDataEntryCount);
 			var teamHTML = '';
 			for (k = 0; k < speakerJsonDataLength; k++) {
 				teamHTML += '<a class="uk-padding-remove" target="_blank" href="';
@@ -600,10 +601,10 @@ f7f5f2-->
 
 
 				teamHTML += '); background-position: ' + teamJsonData[teamDataEntryCount + 5].content.$t + ' ';
-								console.log(teamDataEntryCount);
+				console.log(teamDataEntryCount);
 
 				teamHTML += teamJsonData[teamDataEntryCount + 4].content.$t + ';"></div><div class="team-info"><div class="uk-margin-remove-left uk-flex-center" uk-grid><div class="uk-padding-remove uk-flex uk-flex-column"><span class="team-info-name">';
-				
+
 				team3 = teamDataEntryCount;
 				teamHTML += teamJsonData[team3].content.$t;
 
@@ -621,6 +622,37 @@ f7f5f2-->
 			}
 			console.log(teamHTML);
 			document.getElementById("team-id").innerHTML = teamHTML;
+		})
+
+
+
+
+		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/3/public/basic?alt=json").then(function(resp) {
+			return resp.json();
+		}).
+		then(function(data) {
+			console.log(data);
+			var aboutJsonData = data.feed.entry;
+			var aboutHTML = aboutJsonData[0].content.$t;
+
+
+
+			console.log(aboutHTML);
+			document.getElementById("about-id").innerHTML = aboutHTML;
+		})
+		
+		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/4/public/basic?alt=json").then(function(resp) {
+			return resp.json();
+		}).
+		then(function(data) {
+			console.log(data);
+			var notesJsonData = data.feed.entry;
+			var notesHTML = notesJsonData[0].content.$t;
+
+
+
+			console.log(notesHTML);
+			document.getElementById("notes-id").innerHTML = notesHTML;
 		})
 	</script>
 
