@@ -108,7 +108,15 @@ a:hover {
 		display: none;
 	}
 	
+	.scmedia{
+		display: none;
+	}
+	
 	.form-mob{
+		display: block;
+	}
+	
+	.scmedia-mob{
 		display: block;
 	}
 }
@@ -125,6 +133,11 @@ a:hover {
 	.form-mob {
 	display: none;
 }
+	
+	.scmedia-mob{
+		display: none;
+	}
+	
 }
 
 .hero {
