@@ -315,3 +315,12 @@ width: 260px;
 }
 
 
+
+.social-media-links {
+	color: #003262;
+	transition-duration: 0.2s;
+}
+
+.social-media-links:hover {
+	opacity: 70%;
+}
