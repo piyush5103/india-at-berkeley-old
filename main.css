@@ -17,7 +17,7 @@ a:hover {
 	font-weight: 600;
 	letter-spacing: 0.25px;
 	font-size: 16px;
-	color: #5d5d5d;
+	color: #212121;
 	padding: 8px;
 	padding-left: 14px;
 	padding-right: 14px;
@@ -27,13 +27,13 @@ a:hover {
 .navbarText:hover {
 	background-color: #FDB515;
 	border-radius: 6px;
-	color: #4b4b4b;
+	color: #101010;
 }
 
 .uk-active .navbarText {
 	background-color: #FDB515;
 	border-radius: 6px;
-	color: #4b4b4b;
+	color: #272727;
 }
 
 .uk-navbar-nav > li > a {
@@ -337,3 +337,34 @@ width: 260px;
 .social-media-links:hover {
 	opacity: 70%;
 }
+
+.speaker-switcher {
+	width: 80%;
+	margin-bottom: 10px;
+	border-color: transparent;
+	font-family: 'Muli', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.25px;
+	font-size: 16px;
+	color: #212121;
+	border-radius: 6px;
+}
+
+.speaker-switcher-mob {
+	margin-bottom: 10px;
+	border-color: transparent;
+	font-family: 'Muli', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.25px;
+	font-size: 16px;
+	color: #212121;
+	border-radius: 6px;
+}
+
+.speaker-switcher:hover{
+	background-color: #FDB515;
+	border-radius: 6px;
+	color: #101010;
+	border-color: transparent;
+}
+

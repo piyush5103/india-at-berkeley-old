@@ -64,9 +64,9 @@ f7f5f2-->
 			<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
 				<nav class="uk-navbar-container" uk-navbar="boundary-align: true; align: right;" style="background-color: var(--main-bg-color)">
 					<!--background-color: rgba(0, 50, 98, 0.65);-->
-<div class="uk-navbar-center">
-					<a class="uk-navbar-item uk-logo" href="#"><img data-src="https://ik.imagekit.io/piyush/logo_EIqRM5gS9.png" style=" margin-top: 15px;" width="120" height="" alt="logo" uk-img></a>
-</div>
+					<div class="uk-navbar-center">
+						<a class="uk-navbar-item uk-logo" href="#"><img data-src="https://ik.imagekit.io/piyush/logo_EIqRM5gS9.png" style=" margin-top: 15px;" width="120" height="" alt="logo" uk-img></a>
+					</div>
 
 					<div class="uk-navbar-right">
 
@@ -117,23 +117,35 @@ f7f5f2-->
 
 	<div id="speakers">
 		<div class="section-margin">
-			<div class="section-heading-mob uk-margin-xlarge-left uk-margin">
+			<div class="section-heading-mob uk-margin-xlarge-left uk-margin" style="margin-bottom: 10px;">
 				<h3 class="section-heading-text-mob uk-margin-remove">Speakers</h3>
 
+
+			</div>
+			<div style="margin-top: 10px; margin-bottom: 10px ; margin-left: 0px" class="section-heading-mob uk-text-center" uk-switcher="animation: uk-animation-fade; toggle: > *; connect: .speaker-list">
+				<button class="uk-button uk-button-default speaker-switcher-mob" type="button">Upcoming</button>
+				<button class="uk-button uk-button-default speaker-switcher-mob" type="button">Past Events</button>
 			</div>
 			<div class="uk-flex uk-text-center" uk-grid>
 				<div class="section-heading-lap uk-text-right" style="width: 20%">
 
 					<h3 class="section-heading-text-lap uk-margin-remove">Speakers</h3>
 
+					<div style="margin-top: 25px; margin-left: 55px" class="uk-text-center" uk-switcher="animation: uk-animation-fade; toggle: > *; connect: .speaker-list">
+						<button class="uk-button uk-button-default speaker-switcher" type="button">Upcoming</button>
+						<button class="uk-button uk-button-default speaker-switcher" type="button">Past Events</button>
+					</div>
 				</div>
+
+
 				<div class="uk-width-expand">
 
+					<ul class="uk-switcher speaker-list">
+						<li>
+							<div id="speaker-id" class="speaker-grid uk-child-width-auto uk-text-center" uk-grid>
 
-					<div id="speaker-id" class="speaker-grid uk-child-width-auto uk-text-center" uk-grid>
-
-						<p><span style="color: #626262">Loading, please wait. If nothing appears within 10-15 seconds, please refresh the page. If this error persists, please try again later. Sorry for the inconvenience.</span></p>
-						<!--
+								<p><span style="color: #626262">Loading, please wait. If nothing appears within 10-15 seconds, please refresh the page. If this error persists, please try again later. Sorry for the inconvenience.</span></p>
+								<!--
 						<a class="uk-padding-remove" href="#">
 							<div class="speaker-card">
 								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
@@ -231,9 +243,227 @@ f7f5f2-->
 
 -->
 
+							</div>
+
+						</li>
+						<li>
+							<div id="past-speaker-id" class="speaker-grid uk-child-width-auto uk-text-center" uk-grid>
+
+								<p><span style="color: #626262">Loading, please wait. If nothing appears within 10-15 seconds, please refresh the page. If this error persists, please try again later. Sorry for the inconvenience.</span></p>
+								<!--
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+-->
+
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+				<!--
+				<div class="uk-width-expand">
+
+
+					<div id="speaker-id" class="speaker-grid uk-child-width-auto uk-text-center" uk-grid>
+
+						<p><span style="color: #626262">Loading, please wait. If nothing appears within 10-15 seconds, please refresh the page. If this error persists, please try again later. Sorry for the inconvenience.</span></p>
+						
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="uk-padding-remove" href="#">
+							<div class="speaker-card">
+								<div class="speaker-img" style="background-image: url(img/placeholder.png);"></div>
+								<div class="speaker-info">
+									<div class="uk-flex uk-text-center" uk-grid>
+										<div class="speaker-date">
+											<span class="speaker-card-date">19</span>
+											<span class="speaker-card-month">Jan</span>
+										</div>
+										<div class="speaker-attributes">
+											<span class="speaker-card-name">firstName lastName</span>
+											<span class="speaker-card-attributes">attribute</span>
+											<span class="speaker-card-attributes">attribute</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+
+
 					</div>
 
 				</div>
+				-->
+
 			</div>
 
 		</div>
@@ -542,23 +772,23 @@ f7f5f2-->
 
 	<div>
 		<div style="padding-bottom: 60px" class="uk-text-center">
-			
-				
-				<div class="scmedia uk-width-expand" style="padding-top: 0px">
 
-					<a href="https://www.instagram.com/speakerseries_cal/" target="_blank" class="uk-icon-link social-media-links" uk-icon="instagram" uk-icon="ratio: 1.4;"></a>
-					<!--<a href="https://www.instagram.com/speakerseries_cal/" target="_blank" class="uk-icon-link" uk-icon="twitter" style="color: #003262; margin-left: 4px" uk-icon="ratio:1.6"></a>-->
-					<a href="https://www.facebook.com/SSIBerkeley" target="_blank" class="uk-icon-link social-media-links" uk-icon="facebook" uk-icon="ratio: 1.4;"></a>
-					<a href="https://www.youtube.com/channel/UCWVOkTAJ6Q84dyoCZgI4oVA/" target="_blank" class="uk-icon-link social-media-links" uk-icon="youtube" uk-icon="ratio: 1.5;"></a>
-				</div>
 
-				<div class="scmedia-mob uk-width-expand">
-					<a href="https://www.instagram.com/speakerseries_cal/" target="_blank" class="uk-icon-link social-media-links" uk-icon="instagram" uk-icon="ratio: 2"></a>
-					<!--<a href="https://www.instagram.com/speakerseries_cal/" target="_blank" class="uk-icon-link" uk-icon="twitter" style="color: #003262; margin-left: 4px" uk-icon="ratio:1.6"></a>-->
-					<a href="https://www.facebook.com/SSIBerkeley" target="_blank" class="uk-icon-link social-media-links" uk-icon="facebook" uk-icon="ratio: 2"></a>
-					<a href="https://www.youtube.com/channel/UCWVOkTAJ6Q84dyoCZgI4oVA/" target="_blank" class="uk-icon-link social-media-links" uk-icon="youtube" uk-icon="ratio: 2"></a>
-				</div>
+			<div class="scmedia uk-width-expand" style="padding-top: 0px">
+
+				<a href="https://www.instagram.com/speakerseries_cal/" target="_blank" class="uk-icon-link social-media-links" uk-icon="instagram" uk-icon="ratio: 1.4;"></a>
+				<!--<a href="https://www.instagram.com/speakerseries_cal/" target="_blank" class="uk-icon-link" uk-icon="twitter" style="color: #003262; margin-left: 4px" uk-icon="ratio:1.6"></a>-->
+				<a href="https://www.facebook.com/SSIBerkeley" target="_blank" class="uk-icon-link social-media-links" uk-icon="facebook" uk-icon="ratio: 1.4;"></a>
+				<a href="https://www.youtube.com/channel/UCWVOkTAJ6Q84dyoCZgI4oVA/" target="_blank" class="uk-icon-link social-media-links" uk-icon="youtube" uk-icon="ratio: 1.5;"></a>
 			</div>
+
+			<div class="scmedia-mob uk-width-expand">
+				<a href="https://www.instagram.com/speakerseries_cal/" target="_blank" class="uk-icon-link social-media-links" uk-icon="instagram" uk-icon="ratio: 2"></a>
+				<!--<a href="https://www.instagram.com/speakerseries_cal/" target="_blank" class="uk-icon-link" uk-icon="twitter" style="color: #003262; margin-left: 4px" uk-icon="ratio:1.6"></a>-->
+				<a href="https://www.facebook.com/SSIBerkeley" target="_blank" class="uk-icon-link social-media-links" uk-icon="facebook" uk-icon="ratio: 2"></a>
+				<a href="https://www.youtube.com/channel/UCWVOkTAJ6Q84dyoCZgI4oVA/" target="_blank" class="uk-icon-link social-media-links" uk-icon="youtube" uk-icon="ratio: 2"></a>
+			</div>
+		</div>
 
 
 
@@ -572,6 +802,7 @@ f7f5f2-->
 
 	<script type="text/javascript">
 		var submitted = false;
+
 		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/1/public/basic?alt=json").then(function(resp) {
 			return resp.json();
 		}).
@@ -632,8 +863,69 @@ f7f5f2-->
 		})
 
 
-
 		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/2/public/basic?alt=json").then(function(resp) {
+			return resp.json();
+		}).
+		then(function(data) {
+			var speakerJsonData = data.feed.entry;
+			var speakerJsonDataLength = (speakerJsonData
+				.length - 8) / 8;
+			delete speakerJsonData[0];
+			delete speakerJsonData[1];
+			delete speakerJsonData[2];
+			delete speakerJsonData[3];
+			delete speakerJsonData[4];
+			delete speakerJsonData[5];
+			delete speakerJsonData[6];
+			delete speakerJsonData[7];
+			//console.log(speakerJsonData);
+			//console.log(speakerJsonDataLength);
+
+			var j = 8;
+			var q, w, e, r, t, y, u;
+			//console.log(j);
+			var x = "";
+			for (k = 0; k < speakerJsonDataLength; k++) {
+				x += "<a class=\"uk-padding-remove\" target=\"_blank\" href=\"";
+				q = j + 4;
+				x += speakerJsonData[q].content.$t;
+
+
+				x += "\"><div class=\"speaker-card\"><div class=\"speaker-img\" style=\"background-image: url(";
+				w = j + 5;
+				x += speakerJsonData[w].content.$t;
+
+
+				x += "); background-position: " + speakerJsonData[j + 7].content.$t + " " + speakerJsonData[j + 6].content.$t + ";\"></div><div class=\"speaker-info\"><div class=\"uk-flex uk-text-center\" uk-grid><div class=\"speaker-date\"><span class=\"speaker-card-date\">";
+				e = j + 1;
+				x += speakerJsonData[e].content.$t;
+
+				x += "</span><span class=\"speaker-card-month\">";
+				r = j + 2;
+				x += speakerJsonData[r].content.$t;
+
+				x += "</span></div><div class=\"speaker-attributes\"><span class=\"speaker-card-name\">";
+				t = j;
+				x += speakerJsonData[t].content.$t;
+
+				x += "</span><span class=\"speaker-card-attributes\">";
+				y = j + 3;
+				x += speakerJsonData[y].content.$t;
+
+
+				x += "</span></div></div></div></div></a>";
+
+
+
+				j = j + 8;
+			}
+			document.getElementById("past-speaker-id").innerHTML = x;
+		})
+
+
+
+
+		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/3/public/basic?alt=json").then(function(resp) {
 			return resp.json();
 		}).
 		then(function(data) {
@@ -689,7 +981,7 @@ f7f5f2-->
 
 
 
-		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/3/public/basic?alt=json").then(function(resp) {
+		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/4/public/basic?alt=json").then(function(resp) {
 			return resp.json();
 		}).
 		then(function(data) {
@@ -701,7 +993,7 @@ f7f5f2-->
 			document.getElementById("about-id").innerHTML = aboutHTML;
 		})
 
-		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/4/public/basic?alt=json").then(function(resp) {
+		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/5/public/basic?alt=json").then(function(resp) {
 			return resp.json();
 		}).
 		then(function(data) {
@@ -713,7 +1005,7 @@ f7f5f2-->
 
 
 
-		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/5/public/basic?alt=json").then(function(resp) {
+		fetch("https://spreadsheets.google.com/feeds/cells/1kbStojxjtnS8lc2e30-aCcsQYXCJyoaG9N6j_BX2IO8/6/public/basic?alt=json").then(function(resp) {
 			return resp.json();
 		}).
 		then(function(data) {
@@ -725,7 +1017,7 @@ f7f5f2-->
 	</script>
 
 
-	
+
 
 
 
